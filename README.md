@@ -21,25 +21,7 @@ A web-based malware scanner demonstration application built with Python and Flas
 * **Configuration File:** Easily customize paths, detection rules (hashes, extensions), whitelists, and logging settings via `config.ini`.
 * **Logging:** Records scan activity, detections, errors, and actions to a log file (`malware_detector.log` by default).
 
-## Project Structure
-malware_detector/
-├── myenv/                  # Python virtual environment (if used)
-├── quarantine/             # Default directory for quarantined files
-│   └── .metadata.json      # Stores metadata about quarantined files
-├── scan_target/            # Default directory to place files for scanning
-├── templates/              # HTML templates for the web UI
-│   ├── index.html
-│   ├── results.html
-│   ├── final.html
-│   └── quarantine_view.html
-├── app.py                  # Main Flask application file
-├── config.ini              # Configuration file (!!! IMPORTANT TO EDIT !!!)
-├── rules.yar               # YARA rules file
-├── malware_detector.log    # Log file (created on run)
-├── requirements.txt        # Python dependencies
-└── README.md               # This file
 ## Prerequisites
-
 * Python 3.x (Developed/Tested with Python 3.10+, adjust as needed)
 * `pip` (Python package installer)
 * Git (for cloning the repository)
